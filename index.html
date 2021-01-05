@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>JoliTube</title>
+	    <script src="script.js"></script>
+
+
+
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ESDN5MBC9S"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-ESDN5MBC9S');
+		</script>
+
+
+
+	    <link rel="stylesheet" href="style.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		
+	    <!--<link rel="apple-touch-icon" sizes="180x180" href="rsrc/favicons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" href="rsrc/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="rsrc/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="rsrc/favicons/manifest.json">
+		<meta name="theme-color" content="#ffffff">
+		
+	    <link rel="icon" type="image/png" href="rsrc/favicons/favicon-32x32.png">-->
+	    <link rel="image/x-icon" href="favicon.ico?v=2">
+	    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+		<link rel="manifest" href="/site.webmanifest?v=2">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#ff0000">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+	    <meta charset="UTF-8">
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img id="logo" src="rsrc/logoAlpha.png"/></a>
+			<div id="menuHeader">
+				<a class="optionMenuHeader" id="aboutUs" onclick="displayPage('aboutUs');">À propos</a>
+				<a class="optionMenuHeader" id="proposal" onclick="displayPage('proposal');">Proposer un contenu</a>
+				<!--<a class="optionMenuHeader" id="premium" onclick="displayPage('premium');">Premium</a>-->
+			</div>
+		</header>
+
+		<div id="content">
+
+			<div id="menuBar"></div>
+
+			<div id="menuControler">
+				<h1 id="currentChannelNameDisplay"></h1>
+				<h2 id="currentVideoNameDisplay"></h2>
+				<div id="playerControls">
+					<img id="previousVideo" src="rsrc/mediaPlayer/backGreyed.png" />
+					<img id="playVideo" src="rsrc/mediaPlayer/play.png" onclick="playOrPause();" />
+					<img id="nextVideo" src="rsrc/mediaPlayer/forwardGreyed.png" />
+				</div>
+			</div>
+
+			<div id="ytPlayerContainer">
+				<div id="player"></div>
+			</div>
+
+			<div id="ytPlayerContainerLayer">
+				<div id="alertMsg"></div>
+			</div>
+
+		</div>
+	</body>
+</html>
